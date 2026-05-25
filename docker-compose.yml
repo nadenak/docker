@@ -1,0 +1,12 @@
+services:
+  n1:
+    build: ./n1
+    container_name: c1
+    ports:
+      - "8098:8000"
+
+  n2:
+    build: nginx:stable-alpine3.23
+    container_name: c2
+    ports:
+      - "80:80"
