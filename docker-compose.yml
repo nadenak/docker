@@ -10,3 +10,9 @@ services:
     container_name: c2
     ports:
       - "80:80"
+      
+  n3:
+    build: ./n3
+    container_name: c3
+    depends_on:
+      - n1
